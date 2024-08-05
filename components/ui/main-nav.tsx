@@ -5,7 +5,7 @@ import {cn} from "@/lib/util";
 import {Category} from "@/types";
 
 interface MainNavProps{
-    data:Category
+    data:Category[]
 }
 
 const MainNav : React.FC<MainNavProps> = ({
