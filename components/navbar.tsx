@@ -5,9 +5,8 @@ import getCategories from "@/actions/get-categories";
 import NavbarActions from "@/components/navbar-actions";
 
 export const revalidate = 0 ;
-const Navbar =async () =>{
-    const categories = await getCategories()
-
+const Navbar = async () =>{
+    const categoriees = await getCategories();
     return(
         <div className="border-b">
             <Container>
@@ -15,7 +14,7 @@ const Navbar =async () =>{
                     <Link href={'/'} className="ml-4 flex lg:ml-0 gap-x-2">
                     <p className="font-bold text-xl">RestroBar</p>
                 </Link>
-                   <MainNav data={categories}/>
+                    <MainNav data={categoriees}/>
                    <NavbarActions/>
                </div>
             </Container>
