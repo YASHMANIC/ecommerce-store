@@ -54,7 +54,7 @@ const CartItem: React.FC<CartItemProps> = ({
                        <p className="text-gray-600">{data.brand.name}</p>
                        <p className="text-gray-600 ml-4 border-l border-gray-200 pl-4">{data.size.name}</p>
                    </div>
-                   <Currency value={data.price} />
+                   <Currency value={data.price}/>
                    {/*<div className="flex items-center mt-20 gap-x-2">*/}
                    {/*    <Button disabled={add === 1} onClick={onMinus}><Minus/></Button>*/}
                    {/*    <span className="font-semibold text-lg">{add}</span>*/}
